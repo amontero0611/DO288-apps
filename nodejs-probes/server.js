@@ -20,8 +20,8 @@ http.createServer(function (req, res) {
 		res.write('Hello World!'); 
 		res.end(); 
 	} 
-}).listen(3000, function() { 
+}).listen(8080, function() { 
 	
-	// The server object listens on port 3000 
-	console.log("server start at port 3000"); 
+	// The server object listens on port 8080 
+	console.log("server start at port 8080"); 
 }); 
