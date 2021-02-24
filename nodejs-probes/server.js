@@ -9,15 +9,15 @@ http.createServer(function (req, res) {
 	var url = req.url; 
 	
 	if(url ==='/health') { 
-		res.write('Fine!'); 
+		res.write('Fine!\n'); 
 		res.end(); 
 	} 
 	else if(url ==='/ready') { 
-		res.write('Up!'); 
+		res.write('Up!\n'); 
 		res.end(); 
 	} 
 	else { 
-		res.write('Hello World!'); 
+		res.write('Hello World!\n'); 
 		res.end(); 
 	} 
 }).listen(8080, function() { 
