@@ -9,11 +9,11 @@ http.createServer(function (req, res) {
 	var url = req.url; 
 	
 	if(url ==='/health') { 
-		res.write('Fine!\n'); 
+		res.write('Vivito y coleando!\n'); 
 		res.end(); 
 	} 
 	else if(url ==='/ready') { 
-		res.write('Up!\n'); 
+		res.write('OK!\n'); 
 		res.end(); 
 	} 
 	else { 
