@@ -11,11 +11,13 @@ http.createServer(function (req, res) {
 	var url = req.url; 
 	
 	if(url ==='/health') { 
-		res.write('Bien gracias! desde el pod ' + hostname +'\n'); 
+        res.write('Bien gracias! desde el pod ' + hostname +'\n'); 
+        console.log('Bien por ahora');
 		res.end(); 
 	} 
 	else if(url ==='/ready') { 
-		res.write('Listo! desde el pod ' + hostname + '\n'); 
+        res.write('Listo! desde el pod ' + hostname + '\n'); 
+        console.log('Listo para la guerra');
 		res.end(); 
 	} 
 	else { 
