@@ -1,4 +1,6 @@
 var http = require('http'); 
+var os = require("os");
+var hostname = os.hostname();
 
 // Create a server object 
 http.createServer(function (req, res) { 
@@ -9,15 +11,15 @@ http.createServer(function (req, res) {
 	var url = req.url; 
 	
 	if(url ==='/health') { 
-		res.write('Vivito y coleando!\n'); 
+		res.write('Bien gracias! desde el pod ' + hostname +'\n'); 
 		res.end(); 
 	} 
 	else if(url ==='/ready') { 
-		res.write('OK!\n'); 
+		res.write('Listo! desde el pod ' + hostname + '\n'); 
 		res.end(); 
 	} 
 	else { 
-		res.write('Hello World!\n'); 
+		res.write('Hola! desde el pod '+ hostname +'\n'); 
 		res.end(); 
 	} 
 }).listen(8080, function() { 
