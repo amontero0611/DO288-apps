@@ -4,7 +4,7 @@ var hostname = os.hostname();
 
 const mariadb = require('mariadb');
 const pool = mariadb.createPool({
-     host: 'mariadb', 
+     host: 'angel-mariadb.mariadb', 
      user:'root', 
      password: 'maria',
      connectionLimit: 5
