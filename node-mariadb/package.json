@@ -1,0 +1,17 @@
+{
+  "name": "node-mariadb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "os": "0.x",
+    "http": "0.x",
+    "mariadb": "0.x"
+  }
+}
